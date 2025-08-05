@@ -30,6 +30,8 @@ export const TodoList: React.FC<TodoListProps> = ({
     <tbody>
       {todos.map(todo => (
         <tr key={todo.id} data-cy="todo">
+          <td className="is-centered">{todo.id}</td>
+
           <td className="is-centered">
             {todo.completed && (
               <span className="icon" data-cy="iconCompleted">
