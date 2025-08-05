@@ -22,9 +22,8 @@ export const App: React.FC = () => {
 
   const filteredTodos = getFilteredTodos(todosQuery.data, { query, status });
 
-  const handleUnSelectTodo = () => {
-    setSelectedTodo(null);
-  };
+  const handleUnSelectTodo = () => { setSelectedTodo(null);
+};
 
   return (
     <>
